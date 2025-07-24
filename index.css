@@ -3,6 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
+.display{
+  display: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -182,7 +185,7 @@ max-width: 1140px;
 }
 .plant_lover_content ul li {
   color:var(--paragraph_color) ;
-  font-size: 14px, 3vw, 22px;
+  font-size:clamp( 14px, 3vw, 21px);
 }
 .plant_lover_container{
   width: 540px;
@@ -205,7 +208,95 @@ max-width: 1140px;
   top: -100px;
   left:380px 
 }
-                         /* !responsive */
+                           /* *.lastest_deal_section */
+.lastest_deal_section{
+text-align: center;
+margin: 0 auto;
+max-width: 1140px;
+ font-family: "Noto Serif", serif;
+ margin-bottom: 100px;
+                           }
+.latest_deal_title{
+font-size: clamp(24px, 6vw,50px);
+margin-bottom: -10px;
+}
+
+.latest{
+  color: var(--orange);
+}
+.latest_deals_paragraph{
+  font-size: clamp(14px, 3vw, 22px);
+  max-width: 888px;
+  margin: 10 auto;
+}
+
+.promo-container {
+  display: flex;
+  gap: 28px;
+  padding: 20px;
+  max-width:1140px;
+  margin: 0 auto;
+}
+
+.promo-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
+}
+.promo-card{
+ position: relative;
+ background-size: cover;
+ color: white;
+ background-position:center ;
+ border-radius:10px ;
+ -webkit-border-radius:10px ;
+ -moz-border-radius:10px ;
+ -ms-border-radius:10px ;
+ -o-border-radius:10px ;
+ height:201px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+}
+
+
+.promo-text {
+  text-align:center;
+
+} 
+
+.promo-card h3{
+  font-size:20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.promo-card p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Background images */
+.bloom {
+  background-image: url(assets/deal-bloom.png);
+}
+
+.ana {
+  background-image: url(assets/deal-ana.png);
+}
+
+.zabo {
+  background-image: url(assets/deal-zabo.png);
+   flex: 2;
+  height: 100%;
+  min-height:425px;
+  
+  
+}
+
+                      /* !responsive */
 
 @media screen and (max-width:576px){
   body{
@@ -267,7 +358,9 @@ gap: 20px;
   flex-direction:column;
   padding-left:15px;
   overflow-x: hidden;
-}          
+} .flower_store_img img{
+  max-width: 100%;
+}         
 .trusted_badge_img img{
   display: none;
 } .plant_lover_container{
@@ -276,7 +369,19 @@ gap: 20px;
 }
 .plant_lover_title{
   margin-left: 15px;
-}}
+}
+/* *.lastest_deal_section */
+.promo-container{
+  flex-direction: column;
+}
+.zabo{
+  flex: 1;
+  min-height: 210px;
+}
+
+
+
+}
 
 
 
