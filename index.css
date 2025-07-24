@@ -261,10 +261,10 @@ grid-template-columns:repeat(2,1fr);
 margin-bottom: -80px;
 gap: 20px;
 }
-}
+
              /** plant_lover_section  */
 .plant_lover_section{
-  flex-direction: column;
+  flex-direction:column;
   padding-left:15px;
   overflow-x: hidden;
 }          
@@ -276,7 +276,7 @@ gap: 20px;
 }
 .plant_lover_title{
   margin-left: 15px;
-}
+}}
 
 
 
