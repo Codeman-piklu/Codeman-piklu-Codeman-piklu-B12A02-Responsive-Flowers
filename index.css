@@ -408,10 +408,7 @@ margin-right: 24px;
                       /* !responsive */
 
 @media screen and (max-width:576px){
-  body{
-    background-color: rgba(239, 242, 142, 0.392);
-  
-  }
+ 
                    /** navbar responsive*/
   .navbar{
     justify-content:space-between;
