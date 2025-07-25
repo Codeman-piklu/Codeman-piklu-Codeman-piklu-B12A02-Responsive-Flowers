@@ -71,7 +71,7 @@
 
 ## 🧪 Challenges Part ( 10 Mark)
 
-### Latest Deal Section
+###            
 
 - **Title and subtitles**
 - **Card layout** like Figma
